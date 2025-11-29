@@ -435,17 +435,54 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 50px 60px;
+            gap: 30px 40px;
             max-width: 900px;
             margin: 0 auto;
             opacity: 0.7;
+            padding: 0 20px;
         }
         .clients-logos .logo-row {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 60px;
+            gap: 30px 40px;
             width: 100%;
+        }
+        .clients-logos a {
+            flex-shrink: 0;
+        }
+        @media (max-width: 768px) {
+            .clients-logos {
+                gap: 25px 30px;
+            }
+            .clients-logos .logo-row {
+                gap: 25px 30px;
+            }
+            .clients-logos img {
+                height: 30px !important;
+                max-width: 100px;
+            }
+            .clients-logos img[alt="Astro Malaysia Holdings"] {
+                height: 18px !important;
+            }
+            .clients-logos img[alt="Terra Firma"] {
+                height: 16px !important;
+            }
+            .clients-logos img[alt="BNP Paribas"],
+            .clients-logos img[alt="Citibank"],
+            .clients-logos img[alt="AstraZeneca"] {
+                height: 40px !important;
+            }
+            .clients-logos img[alt="MIT Sloan"] {
+                height: 28px !important;
+            }
+            .clients-logos img[alt="Kelloggs"] {
+                height: 24px !important;
+            }
+            .clients-logos img[alt="P&G"] {
+                height: 30px !important;
+            }
         }
         .clients-logos img {
             height: 40px;
@@ -594,7 +631,7 @@
             <div class="decoder-card fade-in">
                 <div class="decoder-card-number">03</div>
                 <h3>The Reality Trap</h3>
-                <p class="trap-name">The Constructed Reality Challenge</p>
+                <p class="trap-name">Confirmation Bias + Cognitive Dissonance</p>
                 <p>You believe your view of the situation is 'the truth.' So does everyone else on your team. You can't all be right. Under pressure, confirmation bias intensifies. You see evidence that supports your view and dismiss everything else.</p>
             </div>
         </div>
